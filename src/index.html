@@ -1,19 +1,30 @@
+<!-- Enter your HTML code here -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>News Aggregator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator APP</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <h1 class="site-title">News Aggregator</h1>
-  
-  <div class="search-container">
-    <input type="text" name="search" id="search" placeholder="Type and press enter to search..." />
-  </div>
 
-  <ul id="news-articles">
+    <body onload="start()">
+        <h1>News Agrregator</h1>
+        
+        <!--search Bar-->
+        
+        <div class="search-bar">
+        <input type="text" id="search" name="search"
+        placeholder="Type and press enter to search"/>
+        <br>
+        </div>
+        
+        <!--display area of nesws-->
+        <ul id="news-articles"></ul>
+ <!-- script File declaration -->
+ <script src="scripts/index.js"></script>
 
-  </ul>
 </body>
 </html>
+

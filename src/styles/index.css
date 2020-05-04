@@ -1,2 +1,175 @@
-@import "./reset.css";
+/*<!-- Enter your JS code here -->*/
+
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  
+  body{
+    background-color: black;
+    color:rgb(12, 11, 11);
+  
+  }
+  
+   
+  
+  h1{
+    color:white;
+  
+    margin:15px;
+    text-align:center;
+    border: 1px thin white;
+    
+    
+  }
+  div.search-bar
+  {
+    color:white;
+    background-color:black;
+    margin-left: 15px;
+    border-bottom: 1px solid white;
+    grid-template-rows: auto;
+    
+    
+  
+  }
+  #search{
+    background-color: black;
+    color:white;
+      outline: none;
+  }
+  input
+  {
+    border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+  }
+  
+  .container
+  {
+    width: 100%;
+    background-color:white;
+    border-radius: 5px;
+    margin:10px;
+    color:black;
+  }
+  
+  .article{
+    background-color: rgb(17, 16, 16);
+    width: 100%;
+  }
+    .article_title {
+      text-align: center;
+      margin-top: 20px;
+      padding-left:20px;
+      padding-right: 20px;
+      color: rgb(236, 226, 226);
+      
+      
+    }
+    .article-description{
+      text-align: center;
+      font-size: medium;
+      margin-top: 20px;
+      padding-left:20px;
+      padding-right: 20px;
+      color: rgb(204, 199, 199);
+      widows: 100%;
+    }
+    .article-link
+    {
+  
+      margin-top: 20px;
+      padding-left:20px;
+      padding-right: 20px;
+      text-decoration: underline;
+      color: rgb(247, 247, 253);
+      
+    }
+    .article_author{
+    
+      text-align: right;
+      text-decoration: underline;
+      color: rgb(226, 226, 235);
+      margin: 10px;
+    }
+    .img_area img{
+      
+      widows: 100%;
+      
+      display:table-cell;
+  
+    }
+    .article-img {
+      margin-top: 20px;
+      padding-left:20px;
+      padding-right: 20px;
+      width: 100%;
+      height: 205px;
+    }
+    .container:hover{
+      box-shadow: 0 0 2px 2px;
+      display:table-cell;
+    }
+  /*  
+  .img_area.hover
+  {
+    box-shadow: 0 0 2px 1px rgba(19, 20, 20, 0.5);
+  }*/
+  #news-articles{
+  
+    display: grid;
+  
+    grid-template-columns: repeat(4,1fr);
+  }
+  section{
+    color:rgb(56, 54, 54);
+  display: grid;
+  display: table-cell;
+  }
+  .card {
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      display: flexbox;
+    }
+    
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+      box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 4px 0 rgba(71, 70, 70, 0.2); /* this adds the "card" effect */
+      padding: 16px;
+      text-align: center;
+      background-color:rgb(48, 45, 45);
+      margin: 10px;
+      
+    }
+    
+    /* Responsive columns - one column layout (vertical) on small screens */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        /*margin-bottom: 20px;*/
+      }
+    }  
 

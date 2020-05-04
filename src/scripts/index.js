@@ -55,7 +55,7 @@ function getNews(news)
   //async function wth await
 async function loading(searchValueWord=""){
 
-  article_area.innerHTML='<li class="load">News are loading</li>'
+  article.innerHTML='<li class="load">News are loading</li>'
 
   if(searchValueWord!="")
   {

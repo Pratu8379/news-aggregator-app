@@ -19,9 +19,8 @@ function getNews(news)
       news.articles.forEach(element => {
           output+=
           `
-          <section>
+          <section class ="container">
               <br>
-          <div class ="card">
           <li class ="article">
               <br>
           <div class="img_area">
@@ -34,7 +33,6 @@ function getNews(news)
           <span class ="article-author">-${element.author ? element.author:"Anon"}</span><br>
           <a href =${element.url} class = "article-link style="color:blue";></a>
           </li>
-          </div>
           </section>
           
           `

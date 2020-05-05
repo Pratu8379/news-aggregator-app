@@ -78,7 +78,7 @@
   .article{
     width: 100%;
   }
-    .article_title {
+    .article-title {
       text-align: center;
       margin-top: 20px;
       padding-left:20px;
@@ -109,7 +109,7 @@
       font-size: 35px;
       margin-left: 25px;
     }
-    .article_author{
+    .article-author{
     
       text-align: right;
       text-decoration: underline;

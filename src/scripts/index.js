@@ -5,7 +5,7 @@
 
 
 const apikey="4de49088ebcf4adfafcf169b9157d1c4";
-var article=document.getElementById("news-articles");
+var article_field=document.getElementById("news-articles");
 
 //function to have formatted news in form of json//
 
@@ -20,29 +20,27 @@ function getNews(news)
           output+=
           `
           <section class ="container">
-              <br>
           <li class ="article">
-              <br>
           <div class="img_area">
           <img src ="${element.urlToImage}" class="article-img" alt="${element.title}"></img>
           </div>
-          <h2 class="article_title">${element.title}</h2>
+          <h2 class="article-title">${element.title}</h2>
           <br>
           <p class="article-description">${element.description || "description not available"}</p>
           <br>
           <span class ="article-author">-${element.author ? element.author:"Anon"}</span><br>
-          <a href =${element.url} class = "article-link style="color:blue";></a>
+          <a class="article-link"href =${element.url} class = "article-link "></a>
           </li>
           </section>
           
           `
           ;
       });
-          article.innerHTML=output;
+      article_field.innerHTML=output;
       }
       else
       {
-             article.innerHTML='<p class="not-found> no article was found based on serach><p>';
+        article_field.innerHTML='<p class="not-found"> no article was found based on serach><p>';
 
       }
           
@@ -53,7 +51,7 @@ function getNews(news)
   //async function wth await
 async function loading(searchValueWord=""){
 
-  article.innerHTML='<li class="load">News are loading</li>'
+  article_field.innerHTML='<li class="load">News are loading</li>'
 
   if(searchValueWord!="")
   {

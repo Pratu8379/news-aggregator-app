@@ -12,15 +12,15 @@ var article_field=document.getElementById("news-articles");
 function getNews(news)
 {
   let output="";
-  let totalresult="";
+  //let totalresult="";
   console.log(news)
-  console.log(news.totalResults)
+  //console.log(news.totalResults)
   if(news.totalResults>0){
       news.articles.forEach(element => {
           output+=
           `
           <section class ="container">
-          <li class ="article">
+          <li class ="article"><a class="article-link" href="${element.url}" target="_blank">
           <div class="img_area">
           <img src ="${element.urlToImage}" class="article-img" alt="${element.title}"></img>
           </div>
@@ -29,7 +29,7 @@ function getNews(news)
           <p class="article-description">${element.description || "description not available"}</p>
           <br>
           <span class ="article-author">-${element.author ? element.author:"Anon"}</span><br>
-          <a class="article-link"href =${element.url} class = "article-link "></a>
+         </a>
           </li>
           </section>
           
@@ -40,7 +40,7 @@ function getNews(news)
       }
       else
       {
-        article_field.innerHTML='<p class="not-found"> no article was found based on serach><p>';
+        article_field.innerHTML='<p class="not-found">no article was found based on search<p>';
 
       }
           
@@ -51,7 +51,7 @@ function getNews(news)
   //async function wth await
 async function loading(searchValueWord=""){
 
-  article_field.innerHTML='<li class="load">News are loading</li>'
+  article_field.innerHTML='<p class="load">loading.....</li>'
 
   if(searchValueWord!="")
   {

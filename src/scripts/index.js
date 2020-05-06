@@ -40,7 +40,7 @@ function getNews(news)
       }
       else
       {
-        article_field.innerHTML='<p class="not-found">no article was found based on search<p>';
+        article_field.innerHTML='<p class="not-found">no article was found based on search</p>';
 
       }
           

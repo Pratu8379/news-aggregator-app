@@ -18,17 +18,16 @@ function getNews(news)
   if(news.totalResults>0){
       news.articles.forEach(element => {
           output+=
-          `
-          <section class ="container">
-          <li class ="article"><a class="article-link" href="${element.url}" target="_blank">
+          `<section class="container">
+          <li class="article"><a class="article-link" href="${element.url}" target="_blank">
           <div class="img_area">
-          <img src ="${element.urlToImage}" class="article-img" alt="${element.title}"></img>
+          <img src="${element.urlToImage}" class="article-img" alt="${element.title}"></img>
           </div>
           <h2 class="article-title">${element.title}</h2>
           <br>
           <p class="article-description">${element.description || "description not available"}</p>
           <br>
-          <span class ="article-author">-${element.author ? element.author:"Anon"}</span><br>
+          <span class="article-author">-${element.author ? element.author:"Anon"}</span><br>
          </a>
           </li>
           </section>

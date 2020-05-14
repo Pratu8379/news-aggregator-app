@@ -43,10 +43,10 @@
   #search{
     background-color: black;
     color:white;
-    outline: none;
+   
   }
-    input[type=text] {
-      border: none;
+    input[id=search] {
+
       padding: 12px 20px;
       width: 100%;
     }

@@ -89,7 +89,7 @@
       margin-left: 25px;
     }
     .article {
-      list-style-type: none;
+      list-style-type: block;
       display: inline-block;
       margin-left: -14px;
     }
@@ -113,7 +113,7 @@
 
   }
   .article {
-  list-style-type: none;
+  list-style-type: block;
   display: inline;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .article-title {
-  background: none;
+  
   font-family: sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -152,7 +152,7 @@
 .article-description {
   font-size: 25px;
   color: white;
-  background: none;
+  
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -162,7 +162,7 @@
 }
 
 .article-author {
-  background: none;
+  
   font-size: 25px;
   font-family: Trebuchet MS;
   color: blue;
@@ -172,7 +172,7 @@
 
 .article-link {
   color: white;
-  text-decoration: none;
+  
 }
 
 .not-found {

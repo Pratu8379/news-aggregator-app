@@ -89,7 +89,7 @@
       margin-left: 25px;
     }
     .article {
-      list-style-type: block;
+      list-style-type: none;
       display: inline-block;
       margin-left: -14px;
     }
@@ -113,7 +113,7 @@
 
   }
   .article {
-  list-style-type: block;
+  list-style-type: none;
   display: inline;
 }
 

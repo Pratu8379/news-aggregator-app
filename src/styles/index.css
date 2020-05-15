@@ -147,12 +147,15 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+    background: none;
+
 }
 
 .article-description {
   font-size: 25px;
   color: white;
-  
+  background: none;
+
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -162,7 +165,8 @@
 }
 
 .article-author {
-  
+  background: none;
+
   font-size: 25px;
   font-family: Trebuchet MS;
   color: blue;
@@ -172,6 +176,8 @@
 
 .article-link {
   color: white;
+    background: none;
+
   
 }
 
